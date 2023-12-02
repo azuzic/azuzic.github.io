@@ -2,12 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>Alesandro Žužić</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dd2c5124db.js"
+      crossorigin="anonymous"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
+
+
+<style>
+  :root {
+    --thumb: #34d399;
+    --thumbhover: #cbd5e1;
+    --thumbbg: #06060a;
+  }
+  .Poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    background-color: var(--thumbbg);
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  html body::-webkit-scrollbar-track {
+    background: var(--thumbbg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--thumb);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--thumbhover);
+  }
+  ::-webkit-scrollbar-corner {
+    background: #00000000;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: all 0s 50000s;
+  }
+
+  ::selection {
+    color: var(--thumbbg);
+    background: var(--thumb);
+  }
+  .rendering-auto {
+    image-rendering: auto;
+  }
+  .rendering-crisp-edges {
+    image-rendering: crisp-edges;
+  }
+  .rendering-pixelated {
+    image-rendering: pixelated;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100%;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.3s;
+  }
+  .fade-enter-from {
+    opacity: 0;
+  }
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .main {
+    background-image: url("src/assets/background/bg.png");
+    background-position: center;
+    background-size: cover;
+  }
+</style>
