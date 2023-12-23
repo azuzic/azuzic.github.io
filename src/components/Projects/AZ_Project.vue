@@ -5,7 +5,7 @@ import { tools } from "@/stores/projects.js";
 const globalStore = useGlobalStore()
 </script>
 <template> 
-    <div data-aos="fade-right" data-aos-delay="300" class="flex flex-col gap-3 w-full z-10">
+    <div class="flex flex-col gap-3 w-full z-10">
         <div class="flex flex-row gap-3 w-full z-10 relative">                   
             <!--PROJECT IMAGE-->
             <div class="w-full md2:w-auto sm:h-44 aspect-video z-20 bg-center bg-cover rounded cursor-pointer 

@@ -32,12 +32,16 @@ export default {
                     icon: "fa-solid fa-list-check",
                 },
                 { 
-                    name: "Publication", 
+                    name: "Publications", 
                     icon: "fa-solid fa-book",
                 },
                 { 
                     name: "Games", 
                     icon: "fa-solid fa-gamepad",
+                },
+                { 
+                    name: "Contact", 
+                    icon: "fa-solid fa-address-card",
                 }
             ]
         }

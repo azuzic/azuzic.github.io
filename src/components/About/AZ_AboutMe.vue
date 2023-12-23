@@ -9,6 +9,16 @@
             <div class="relative flex flex-col h-96 gap-8">
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
                 <AZ_AboutText data-aos="fade-up" data-aos-delay="200" class="px-8"/>
+                
+                <div data-aos="fade-up" data-aos-delay="250">
+                    <div class="transition-all duration-300 py-1.5 px-4 rounded-xl font-extrabold text-lg text-slate-950 
+                        bg-gradient-to-r from-AZ_from to-AZ_to tracking-wide hover:scale-105 w-fit
+                        hover:hue-rotate-180  cursor-pointer">
+                        <i class="fa-solid fa-file-arrow-down mr-2"></i> Download CV
+                    </div>
+                </div>
+                
+                
             </div>
         </div >
 
@@ -32,7 +42,6 @@ export default {
         const globalStore = useGlobalStore();
         const onChange = (waypointState) => {
 
-        console.log("About me");
         if (waypointState.going == "IN") {
             globalStore.itemActive = "About me"
         }
