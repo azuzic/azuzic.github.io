@@ -63,7 +63,39 @@ import Matplotlib from "@/assets/Projects/Tools/Matplotlib.png";
 import opencv from "@/assets/Projects/Tools/opencv.png";
 import Pillow from "@/assets/Projects/Tools/Pillow.png";
 import EasyOCR from "@/assets/Projects/Tools/EasyOCR.png";
-
+//Carousel
+//Doge
+import Doge1 from "@/assets/Carousel/Doge/1.jpg";
+import Doge2 from "@/assets/Carousel/Doge/2.jpg";
+import Doge3 from "@/assets/Carousel/Doge/3.jpg";
+import Doge4 from "@/assets/Carousel/Doge/4.jpg";
+import Doge5 from "@/assets/Carousel/Doge/5.jpg";
+import Doge6 from "@/assets/Carousel/Doge/6.jpg";
+import Doge7 from "@/assets/Carousel/Doge/7.jpg";
+import Doge8 from "@/assets/Carousel/Doge/8.jpg";
+import Doge9 from "@/assets/Carousel/Doge/9.jpg";
+//StrandedAway
+import StrandedAway1 from "@/assets/Carousel/StrandedAway/1.jpg";
+import StrandedAway2 from "@/assets/Carousel/StrandedAway/2.jpg";
+import StrandedAway3 from "@/assets/Carousel/StrandedAway/3.jpg";
+import StrandedAway4 from "@/assets/Carousel/StrandedAway/10.jpg";
+import StrandedAway5 from "@/assets/Carousel/StrandedAway/5.jpg";
+import StrandedAway6 from "@/assets/Carousel/StrandedAway/6.jpg";
+import StrandedAway7 from "@/assets/Carousel/StrandedAway/7.jpg";
+import StrandedAway8 from "@/assets/Carousel/StrandedAway/8.jpg";
+import StrandedAway9 from "@/assets/Carousel/StrandedAway/9.jpg";
+//AdventureofBo
+import AdventureofBo1 from "@/assets/Carousel/AdventureofBo/1.jpg";
+import AdventureofBo2 from "@/assets/Carousel/AdventureofBo/2.jpg";
+import AdventureofBo3 from "@/assets/Carousel/AdventureofBo/3.jpg";
+import AdventureofBo4 from "@/assets/Carousel/AdventureofBo/4.jpg";
+import AdventureofBo5 from "@/assets/Carousel/AdventureofBo/5.jpg";
+import AdventureofBo6 from "@/assets/Carousel/AdventureofBo/6.jpg";
+import AdventureofBo8 from "@/assets/Carousel/AdventureofBo/8.jpg";
+import AdventureofBo9 from "@/assets/Carousel/AdventureofBo/9.jpg";
+//GameEngine
+import GEUnity from "@/assets/Carousel/GEUnity.png";
+import GEGameMaker from "@/assets/Carousel/GEGameMaker.png";
 
 const images = {
     Projects: { 
@@ -85,7 +117,19 @@ const images = {
         Pillow, EasyOCR, MySQL, PHP, R, dplyr,
         VueJSONPretty, vuedraggablenext, Playwright,
         JavaFX, Gradle, Kotlin, GoogleBooks, Android
-    }
+    },
+    Carousel: {
+        Doge: [
+            Doge1, Doge2, Doge3, Doge4, Doge5, Doge6, Doge7, Doge8, Doge9
+        ],
+        StrandedAway: [
+            StrandedAway1, StrandedAway2, StrandedAway3, StrandedAway4, StrandedAway5, StrandedAway6, StrandedAway7, StrandedAway8, StrandedAway9
+        ],
+        AdventureofBo: [
+            AdventureofBo1, AdventureofBo2, AdventureofBo3, AdventureofBo4, AdventureofBo5, AdventureofBo6, AdventureofBo8, AdventureofBo9
+        ]
+    },
+    GameEngine: { GEUnity, GEGameMaker }
 };
 
 export { images };

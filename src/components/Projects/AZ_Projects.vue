@@ -6,19 +6,21 @@
             <AZ_H1 data-aos="fade-up" data-aos-delay="50">
                 <Waypoint @change="onChange"> Projects </Waypoint>
             </AZ_H1>
+            
             <div class="relative flex flex-col w-full gap-8">
+
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
-                <div  data-aos="fade-up" data-aos-delay="150" class="flex flex-col text-slate-300 text-justify gap-3 max-w-4xl">
-                    I have extensive experience working on diverse projects, covering both
-                    backend and frontend development. 
-                    <br>
-                    My skills include crafting websites,
-                    applications, and various software solutions.
+
+                <div  data-aos="fade-up" data-aos-delay="150" class="flex flex-col text-slate-300 text-justify gap-3 max-w-3xl">
+                    I have extensive experience working on diverse projects, covering both backend and frontend development. 
+                    My skills include crafting websites, applications, and various software solutions.
                 </div>
+
                 <div class="flex flex-row flex-wrap justify-start w-full z-10">
                     <AZ_Project class="w-1/4 h-[492px]" data-aos="fade-right" :data-aos-delay="100+(i*50)%400" v-for="project, i in projects" :project="project" 
                     :style="'z-index: ' + -i*10 + ';'" />
                 </div>
+
             </div>
         </div >
 

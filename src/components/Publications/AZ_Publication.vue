@@ -22,12 +22,12 @@ const globalStore = useGlobalStore()
             </div>
 
             <!-- ABSTRACT -->
-            <div v-if="false" class="absolute bottom-0  px-9 pt-10 mb-20 text-sm text-justify font-light overflow-hidden line-clamp-[14]" :ref="publication.title">
+            <div class="absolute bottom-0  px-9 pt-10 mb-20 text-sm text-justify font-light overflow-hidden line-clamp-[14]" :ref="publication.title">
                 &nbsp&nbsp&nbsp&nbsp {{ publication.abstract }}
             </div>
 
-            <embed :src="publication.file+'#view=FitH'" class="absolute bottom-0 h-5/6 w-full pt-4 px-0.5 mb-0.5 rounded-lg 
-                opacity-20 group-hover:opacity-60 transition-all duration-500" />
+            <embed v-if="false" :src="publication.file+'#view=FitH'" class="absolute bottom-0 h-5/6 w-full pt-4 px-0.5 mb-0.5 rounded-lg 
+                opacity-0 group-hover:opacity-60 transition-all duration-500" />
 
             <a v-if="publication.link" :href="publication.link" target="_blank">
                 <AZ_Button zclass="py-1 px-2 group/item flex justify-center items-center transition-all duration-500 absolute bottom-5 left-5 overflow-hidden">
@@ -55,11 +55,6 @@ export default {
     name: "AZ_Publication",
     components: { AZ_Button },
     props: { publication: Object },
-    data() {
-        return {
-        textContent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-        };
-    },
     methods: {
         async downloadPublication() {
             try {
