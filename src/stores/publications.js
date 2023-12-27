@@ -1,9 +1,3 @@
-import ClassificationofVisual from '@/assets/Publications/Classification of Visual Perception EEG signals for a 2D platformer game.pdf';
-import EvaluatingaConceptualModel from '@/assets/Publications/Evaluating a Conceptual Model for Measuring Gaming Experience A Case Study of Stranded Away Platformer Game.pdf';
-import StrandedAwayImplementation from '@/assets/Publications/Stranded Away Implementation and User Experience Evaluation of an Indie Platformer Game Developed Using Unity Engine.pdf';
-import DetectionandClassification from '@/assets/Publications/Detection and Classification of Speech Bubbles in Comics Using Convolutional Neural Networks.pdf';
-import ComparisonofVidegame from '@/assets/Publications/Comparison of Videgame Development Environments.pdf';
-
 const publications = [
     {
         title: 'Classification of Visual Perception EEG signals for a 2D platformer game',
@@ -31,7 +25,7 @@ const publications = [
                 in the training phase, suboptimal results were observed, with
                 a maximum accuracy of 41%.`,
         link: "http://conf.uni-obuda.hu/sisy2023/",
-        file: ClassificationofVisual
+        file: "src/assets/Publications/Classification of Visual Perception EEG signals for a 2D platformer game.pdf"
     },
     {
         title: 'Evaluating a Conceptual Model for Measuring Gaming Experience: A Case Study of Stranded Away Platformer Game',
@@ -48,7 +42,7 @@ const publications = [
             evaluating different facets of the gaming experience in video games and showcase the potential of the proposed model and 
             measuring instrument as tools for game designers to enhance the overall quality of their products.`,
         link: "https://www.mdpi.com/2078-2489/14/6/350",
-        file: EvaluatingaConceptualModel
+        file: "src//assets/Publications/Evaluating a Conceptual Model for Measuring Gaming Experience A Case Study of Stranded Away Platformer Game.pdf"
     },
     {
         title: 'Stranded Away: Implementation and User Experience Evaluation of an Indie Platformer Game Developed Using Unity Engine',
@@ -62,7 +56,7 @@ const publications = [
             of study respondents consisted mainly of students who first played the game and then completed the post-use questionnaire. The 
             reported findings uncovered to which extent Stranded Away has met the requirements of relevant user experience dimensions.`,
         link: "https://ieeexplore.ieee.org/document/10159769",
-        file: StrandedAwayImplementation
+        file: "src/assets/Publications/Stranded Away Implementation and User Experience Evaluation of an Indie Platformer Game Developed Using Unity Engine.pdf"
     },
     {
         title: 'Detection and Classification of Speech Bubbles in Comics Using Convolutional Neural Networks',
@@ -77,7 +71,7 @@ const publications = [
             size. The findings present a robust foundation for advancing the automation of comic book analysis
             and hold promise for broader applications in visual narrative understanding.`,
         link: "https://zir.nsk.hr/islandora/object/unipu:7489",
-        file: DetectionandClassification
+        file: "src/assets/Publications/Detection and Classification of Speech Bubbles in Comics Using Convolutional Neural Networks.pdf"
     },
     {
         title: 'Comparison of Videgame Development Environments',
@@ -90,7 +84,7 @@ const publications = [
             Therefore, this paper aims to address these uncertainties by comparing three popular game development environments - Unity, 
             Godot, and Unreal Engine. `,
         link: "https://zir.nsk.hr/islandora/object/unipu:7489",
-        file: ComparisonofVidegame
+        file: "src/assets/Publications/Comparison of Videgame Development Environments.pdf"
     },
 ]
 
