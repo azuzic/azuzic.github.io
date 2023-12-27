@@ -31,7 +31,7 @@ import AZ_H1 from '@/components/Global/AZ_H1.vue';
 import { Waypoint } from "vue-waypoint";
 import { useGlobalStore } from '@/stores/globalStore';
 import { publications } from "@/stores/publications.js";
-import AZ_Publication from './AZ_Publication.vue';
+import AZ_Publication from '@/components/Publications/AZ_Publication.vue';
 
 export default {
     name: "AZ_Publications",
