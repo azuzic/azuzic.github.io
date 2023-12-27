@@ -85,14 +85,14 @@ import StrandedAway7 from "@/assets/Carousel/StrandedAway/7.jpg";
 import StrandedAway8 from "@/assets/Carousel/StrandedAway/8.jpg";
 import StrandedAway9 from "@/assets/Carousel/StrandedAway/9.jpg";
 //AdventureofBo
-import AdventureofBo1 from "@/assets/Carousel/AdventureofBo/1.jpg";
-import AdventureofBo2 from "@/assets/Carousel/AdventureofBo/2.jpg";
-import AdventureofBo3 from "@/assets/Carousel/AdventureofBo/3.jpg";
-import AdventureofBo4 from "@/assets/Carousel/AdventureofBo/4.jpg";
-import AdventureofBo5 from "@/assets/Carousel/AdventureofBo/5.jpg";
-import AdventureofBo6 from "@/assets/Carousel/AdventureofBo/6.jpg";
-import AdventureofBo8 from "@/assets/Carousel/AdventureofBo/8.jpg";
-import AdventureofBo9 from "@/assets/Carousel/AdventureofBo/9.jpg";
+import AdventureofBo1 from "@/assets/Carousel/AdventureOfBo/1.jpg";
+import AdventureofBo2 from "@/assets/Carousel/AdventureOfBo/2.jpg";
+import AdventureofBo3 from "@/assets/Carousel/AdventureOfBo/3.jpg";
+import AdventureofBo4 from "@/assets/Carousel/AdventureOfBo/4.jpg";
+import AdventureofBo5 from "@/assets/Carousel/AdventureOfBo/5.jpg";
+import AdventureofBo6 from "@/assets/Carousel/AdventureOfBo/6.jpg";
+import AdventureofBo8 from "@/assets/Carousel/AdventureOfBo/8.jpg";
+import AdventureofBo9 from "@/assets/Carousel/AdventureOfBo/9.jpg";
 //GameEngine
 import GEUnity from "@/assets/Carousel/GEUnity.png";
 import GEGameMaker from "@/assets/Carousel/GEGameMaker.png";
