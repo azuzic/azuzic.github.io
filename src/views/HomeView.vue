@@ -3,7 +3,7 @@
 
         <AZ_AboutMe/>  
         
-        <AZ_Projects id="Projects"/>
+        <AZ_Projects class="z-50" id="Projects"/>
 
         <AZ_Publications id="Publications"/>
 

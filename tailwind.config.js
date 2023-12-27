@@ -17,10 +17,15 @@ export default {
                     '50%': { filter: 'hue-rotate(45deg)'},
                     '100%': { filter: 'hue-rotate(0deg)' },
                 },
+				marquee: {
+					"0%": { transform: "translateX(101%)" },
+					"100%": { transform: "translateX(-101%)" },
+				},
             },
             animation: {
                 'hue-rotate': 'hueRotate 60s linear infinite',
-            },
+				marquee: "marquee 15s linear infinite",
+			},
 			dropShadow: {
 				AZ: "0px 0px 2px black",
 				"pixelArt-1": ["1px 0px 0px white", "0px -1px 0px white", "0px 1px 0px white", "-1px 0px 0px white"],
@@ -34,8 +39,12 @@ export default {
             colors: {
                 AZ_from: "#34d399",
                 AZ_to: "#22d3ee",
+                AZ_from_inverted: "#ff87c1",
+                AZ_to_inverted: "#ff8b71",
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require("tailwind-scrollbar")({ nocompatible: true }),
+    ],
 };

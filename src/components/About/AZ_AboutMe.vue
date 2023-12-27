@@ -10,14 +10,9 @@
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
                 <AZ_AboutText data-aos="fade-up" data-aos-delay="200" class="px-8"/>
                 
-                <div data-aos="fade-up" data-aos-delay="250">
-                    <div class="transition-all duration-300 py-1.5 px-4 rounded-xl font-extrabold text-lg text-slate-950 
-                        bg-gradient-to-r from-AZ_from to-AZ_to tracking-wide hover:scale-105 w-fit
-                        hover:hue-rotate-180  cursor-pointer">
-                        <i class="fa-solid fa-file-arrow-down mr-2"></i> Download CV
-                    </div>
-                </div>
-                
+                <AZ_Button @click="downloadCV" data-aos="fade-up" data-aos-delay="250" zclass="py-1.5 px-4 text-lg hover:scale-110">
+                    <i class="fa-solid fa-file-arrow-down mr-2"></i> Download CV
+                </AZ_Button>
                 
             </div>
         </div >
@@ -34,10 +29,12 @@ import AZ_AboutText from '@/components/About/AZ_AboutText.vue';
 import AZ_Avatar from '@/components/About/AZ_Avatar.vue';
 import { Waypoint } from "vue-waypoint";
 import { useGlobalStore } from '@/stores/globalStore';
+import AZ_Button from '@/components/Global/AZ_Button.vue';
+import pdfFile from '@/assets/CV-(Alesandro Žužić)-[05.11.2023.].pdf';
 
 export default {
     name: "AZ_AboutMe",
-    components: { AZ_Line, AZ_H1, AZ_AboutText, AZ_Avatar, Waypoint },
+    components: { AZ_Line, AZ_H1, AZ_AboutText, AZ_Avatar, Waypoint, AZ_Button },
     setup() {
         const globalStore = useGlobalStore();
         const onChange = (waypointState) => {
@@ -46,8 +43,17 @@ export default {
             globalStore.itemActive = "About me"
         }
       };
-
       return { onChange, globalStore };
     },
+    methods: {
+        downloadCV() {
+            const link = document.createElement('a');
+            link.href = pdfFile;
+            link.download = 'CV-(Alesandro Žužić)-[05.11.2023.].pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    }
 };
 </script>

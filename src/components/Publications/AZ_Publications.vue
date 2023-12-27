@@ -8,11 +8,13 @@
             </AZ_H1>
             <div class="relative flex flex-col h-96 w-full gap-8">
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
-                <div v-false  data-aos="fade-up" data-aos-delay="150" class="flex flex-col text-slate-300 text-justify gap-3 max-w-4xl">
-
+                <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col text-slate-300 text-justify gap-3 max-w-4xl">
+                    I have contributed to several publications, showcasing my expertise in various aspects of technology. 
                 </div>
-                <div class="flex flex-col gap-6 w-full pb-64">
+                <div class="flex flex-row flex-wrap w-full pb-64">
                     
+                    <AZ_Publication class="w-1/3 h-[492px]" data-aos="fade-right" :data-aos-delay="200+(i*100)%300"  v-for="publication, i in publications" :publication="publication"/>
+
                 </div>
             </div>
         </div >
@@ -26,11 +28,12 @@ import AZ_H1 from '@/components/Global/AZ_H1.vue';
 import AZ_Project from '@/components/Projects/AZ_Project.vue';
 import { Waypoint } from "vue-waypoint";
 import { useGlobalStore } from '@/stores/globalStore';
-import { projects } from "@/stores/projects.js";
+import { publications } from "@/stores/publications.js";
+import AZ_Publication from './AZ_Publication.vue';
 
 export default {
     name: "AZ_Publications",
-    components: { AZ_Line, AZ_H1, Waypoint, AZ_Project },
+    components: { AZ_Line, AZ_H1, Waypoint, AZ_Project, AZ_Publication },
     setup() {
         const globalStore = useGlobalStore();
         const onChange = (waypointState) => {
@@ -39,7 +42,7 @@ export default {
             }
         };
 
-      return { onChange, globalStore, projects };
+      return { onChange, globalStore, publications };
     },
 };
 </script>

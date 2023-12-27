@@ -7,7 +7,8 @@ let wait = function (seconds) {
 };
 export const useGlobalStore = defineStore("globalStore", {
 	state: () => ({
-        itemActive: ""
+        itemActive: "",
+        file: "",
     }),
 	actions: {},
 });
