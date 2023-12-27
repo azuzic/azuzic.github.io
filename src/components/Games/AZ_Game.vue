@@ -1,5 +1,4 @@
 <script setup>
-import { useGlobalStore } from '@/stores/globalStore'
 import { images } from "@/stores/images.js";
 </script>
 <template> 
@@ -34,7 +33,8 @@ import { images } from "@/stores/images.js";
                 <div class="absolute bg-slate-950 bg-opacity-75 transition-all duration-500 rounded-lg h-full w-full pointer-events-none
                     z-50 top-0 left-0 flex justify-center items-center opacity-0 group-hover/engine:opacity-100 border-3 border-AZ_to">
                     <div class="absolute bg-slate-200 bg-opacity-75 p-4 h-32 flex justify-center items-center w-full">
-                        <img :src="images.GameEngine[game.engine]" class="h-full">
+                        <div class="w-full h-full" style="background-repeat: no-repeat; background-position: center; background-size: contain;"
+                            :style="'background-image: url('+images.GameEngine[game.engine]+');'">></div>
                     </div>
                 </div>
             </div>

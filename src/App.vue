@@ -1,9 +1,9 @@
 <template>
 	<div class="w-full h-full relative | transition-all duration-300 | Poppins text-slate-200">
 		<AZ_BG/>
+        <AZ_Menu/>
 
 		<div class="min-h-full flex flex-col-reverse absolute w-full">
-            <AZ_Menu/>
 
 			<router-view class="" v-slot="{ Component, route }">
 				<transition name="fade">

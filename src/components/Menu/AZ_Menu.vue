@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute top-0 left-0 w-full" data-aos="fade-down">
+    <div class="fixed top-0 left-0 w-full z-[200]" >
         <AZ_MenuTop :items="items"/>
     </div>
     <AZ_MenuSide :links="items"/>

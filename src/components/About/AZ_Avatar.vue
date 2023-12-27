@@ -7,7 +7,7 @@
         <AZ_Line class="absolute scale-90 bottom-0"/>
         <AZ_Line class="absolute scale-90 right-1/2 bottom-1/2 rotate-90"/>
     </div>
-    </template>
+</template>
 
 <script>
 import AvatarImg from "@/assets/avatar.png";

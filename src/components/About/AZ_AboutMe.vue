@@ -1,7 +1,7 @@
 <template>
-    <div class="flex w-full h-fit justify-center lg:justify-between items-center">   
+    <div class="flex w-full h-fit justify-center lg:justify-between">   
 
-        <div class="flex flex-col h-fit gap-8 drop-shadow-AZ rounded-lg justify-center items-center transition-all duration-500
+        <div class="flex flex-col h-fit gap-8 drop-shadow-AZ rounded-lg transition-all duration-500  items-center
         px-4 md:px-6 lg:px-12 xl:px-16 py-8 w-[762px]">
              
             <AZ_H1 data-aos="fade-up" data-aos-delay="50">
@@ -11,7 +11,7 @@
             <AZ_Avatar data-aos="zoom-in" data-aos-delay="400" class="lg:hidden | transition-all duration-500
                 md:h-96 md:w-96 md:min-w-[384px] md:min-h-[384px]
                 h-64 w-64 min-w-[256px] min-h-[256px] " />
-            <div class="relative flex flex-col h-96 gap-8 | items-center md:items-start | transition-all duration-500">
+            <div class="relative flex flex-col gap-8 | items-center md:items-start | transition-all duration-500">
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
                 <AZ_AboutText data-aos="fade-up" data-aos-delay="200" class="px-8"/>
                 
@@ -22,7 +22,7 @@
             </div>
         </div >
 
-        <AZ_Avatar class="mt-24 h-96 w-96 min-w-[384px] min-h-[384px] hidden lg:flex" data-aos="zoom-in" data-aos-delay="400"/>
+        <AZ_Avatar class="mt-28 xl:mt-32 h-96 w-96 min-w-[384px] min-h-[384px] hidden lg:flex" data-aos="zoom-in" data-aos-delay="400"/>
 
     </div>   
 </template>

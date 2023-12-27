@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col text-slate-300 text-justify gap-3">
+    <div class="flex flex-col text-slate-300 text-justify gap-3 h-fit">
         <div class="font-extrabold text-transparent text-left text-xl bg-clip-text bg-gradient-to-r from-AZ_from to-AZ_to tracking-wide">
             FULL STACK & VIDEO GAME DEVELOPER
         </div>
