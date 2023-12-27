@@ -1,5 +1,6 @@
 <template>
-    <div id="About me" class="flex flex-col w-full h-full items-center justify-start py-48 px-64 gap-24">
+    <div id="About me" class="flex flex-col w-full h-full items-center justify-start py-24 md:py-32 md2:py-48 | transition-all duration-500
+        px-0 xs:px-12 sm:px-1 md:px-2 md2:px-4 lg:px-6 xl:px-24 2xl:px-52 3xl:px-64">
 
         <AZ_AboutMe/>  
         
@@ -9,7 +10,7 @@
 
         <AZ_Games id="Games"/>
     	
-        <AZ_ContactUsView id="Contact"/>
+        <AZ_ContactUsView class="pb-24" id="Contact"/>
         
 
     </div>

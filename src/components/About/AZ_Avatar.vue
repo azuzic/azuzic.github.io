@@ -1,5 +1,5 @@
 <template>
-    <div class="relative flex h-96 aspect-square drop-shadow-AZ bg-slate-950 bg-opacity-20 rounded-3xl mt-24">
+    <div class="relative flex drop-shadow-AZ bg-slate-950 bg-opacity-20 rounded-3xl">
         <AZ_Line class="absolute scale-90"/>
         <AZ_Line class="absolute scale-90 left-1/2 bottom-1/2 rotate-90"/>
         <img class="rendering-pixelated p-8"

@@ -1,21 +1,28 @@
 <script setup>
 import { useGlobalStore } from '@/stores/globalStore'
 import { images } from "@/stores/images.js";
-const globalStore = useGlobalStore()
 </script>
 <template> 
     <div class="flex flex-col relative">
 
-        <div class="relative flex h-full w-full rounded-lg overflow-hidden group gap-4" :class="reverse%2==0 ? 'flex-row-reverse' : 'flex-row'">
+        <div class="relative flex h-full w-full rounded-lg overflow-hidden group gap-2 md:gap-3" :class="reverse%2==0 ? 'flex-col md:flex-row-reverse' : 'flex-col md:flex-row'">
             
             <!-- BG -->
             <div class="absolute hover:drop-shadow-lg transition-all duration-500 rounded-lg w-full h-full -z-10"></div>
 
+            <!-- TITLE -->
+            <div class="flex md:hidden w-full rounded-lg transition-all duration-500 bg-slate-950 bg-opacity-25 group-hover:bg-opacity-40">
+                <div class="text-3xl text-AZ_to py-2 px-4 flex font-extrabold text-transparent
+                    bg-clip-text bg-gradient-to-r from-AZ_from to-AZ_to tracking-wide">
+                    {{ game.title }}
+                </div> 
+            </div>
+
             <!-- CAROUSEL -->
-            <div class="h-96 w-1/2 rounded-lg overflow-hidden relative group/engine">
+            <div class="h-64 md:h-96 w-full md:w-1/2 rounded-lg overflow-hidden relative group/engine">
                 <carousel class="relative h-full lex justify-center items-center" :items-to-show="1" :wrapAround="true" :autoplay="(4000+(reverse*1000)%3000)" :dir="reverse%2==0 ? 'ltr' : 'rtl'" :transition="2000" :mouseDrag="false" :touchDrag="false" >
                     <slide v-for="slide in images.Carousel[game.images]" :key="slide">
-                        <div class="bg-red-300 bg-opacity-25 h-96 w-[1282px]"
+                        <div class="bg-red-300 bg-opacity-25 h-64 md:h-96 w-[1282px]"
                             style="background-repeat: no-repeat; background-size: cover;"
                             :style="'background-image: url('+slide+');'">
                         </div>
@@ -32,10 +39,11 @@ const globalStore = useGlobalStore()
                 </div>
             </div>
             
-            <div class="flex flex-col h-96 gap-4 w-1/2">
+            <!-- BODY -->
+            <div class="flex flex-col h-64 md:h-96 gap-2 md:gap-3 w-full md:w-1/2">
 
                 <!-- TITLE -->
-                <div class="flex w-full rounded-lg transition-all duration-500 bg-slate-950 bg-opacity-25 group-hover:bg-opacity-40">
+                <div class="hidden md:flex w-full rounded-lg transition-all duration-500 bg-slate-950 bg-opacity-25 group-hover:bg-opacity-40">
                     <div class="text-3xl text-AZ_to py-2 px-4 flex font-extrabold text-transparent
                         bg-clip-text bg-gradient-to-r from-AZ_from to-AZ_to tracking-wide">
                         {{ game.title }}

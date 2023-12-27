@@ -1,7 +1,7 @@
 
 <template>
     <router-link to="/" class="waviy group">
-        <div class="flex logo_font pt-1 pl-2 | transition-all duration-300">
+        <div class="flex logo_font pt-1 pl-2 shrink | transition-all duration-300">
             
             <div v-if="true" class="relative h-7 mr-2 group-hover:-translate-x-3 group-hover:scale-110 group-hover:hue-rotate-180 | transition-all duration-500">
                 <div class="absolute bg-gradient-to-r from-AZ_from to-AZ_to w-[3px] h-7 rounded-full | transition-all duration-500
