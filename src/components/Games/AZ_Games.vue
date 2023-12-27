@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-fit gap-64 justify-center items-center">   
+    <div class="flex w-full h-fit gap-64 justify-center items-center pt-24">   
  
         <div class="flex flex-col h-fit w-full gap-8 drop-shadow-AZ rounded-lg px-16 py-8">
             
@@ -7,7 +7,7 @@
                 <Waypoint @change="onChange"> Games </Waypoint>
             </AZ_H1>
 
-            <div class="relative flex flex-col h-96 w-full gap-8">
+            <div class="relative flex flex-col w-full gap-8">
 
                 <AZ_Line data-aos="fade-up" data-aos-delay="100"/>
 
@@ -15,7 +15,7 @@
                     As a hobbyist, I've crafted few games utilizing various game engines, showcasing my passion for game development.
                 </div>
 
-                <div class="flex flex-col w-full pb-64 gap-8">
+                <div class="flex flex-col w-full gap-8">
                     
                     <AZ_Game v-for="game, i in games" :game="game" :reverse="i" :data-aos="i%2==0 ? 'fade-right' : 'fade-left'" :data-aos-delay="100"/>
 

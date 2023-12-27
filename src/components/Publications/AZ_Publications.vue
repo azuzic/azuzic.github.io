@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-fit gap-64 justify-center items-center">   
+    <div class="flex w-full h-fit gap-64 justify-center items-center pt-24">   
  
         <div class="flex flex-col h-fit w-full gap-8 drop-shadow-AZ rounded-lg px-16 py-8">
             
