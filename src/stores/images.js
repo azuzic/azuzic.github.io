@@ -14,6 +14,7 @@ import MacroQuietGameLauncher from "@/assets/Projects/Img/MacroQuietGameLauncher
 import Bookstacker from "@/assets/Projects/Img/Bookstacker.png";
 import HotelManagementDatabaseApp from "@/assets/Projects/Img/HotelManagementDatabaseApp.png";
 import FipuInternshipSystem from "@/assets/Projects/Img/FipuInternshipSystem.png";
+import DraganaŽužićApartments from "@/assets/Projects/Img/DraganaŽužićApartments.png";
 //Tools
 //Frontend
 import Pinia from "@/assets/Projects/Tools/Pinia.png";
@@ -103,7 +104,7 @@ const images = {
         DetectionandClassificationofSpeechBubblesinComicsUsingConvolutionalNeuralNetworks, 
         BitnomiaFrontend, NaiveBayesSpamFilter, IstraMusicShop , PDFTemplateMakerFrontend, 
         PDFTemplateMakerService, MacroQuietGameLauncher, Bookstacker, 
-        HotelManagementDatabaseApp, FipuInternshipSystem 
+        HotelManagementDatabaseApp, FipuInternshipSystem, DraganaŽužićApartments
     },
     Tools: { 
         Axios, Vue3, Vite, Pinia, Chartjs, 

@@ -160,6 +160,13 @@ const projects = [
         tools: [ 'Gradle', 'Kotlin', 'GoogleBooks', 'Android' ],
         sourceCode: "https://github.com/azuzic/bookstacker",
         webPage: ""
+    },    
+    {
+        name: 'Dragana Žužić Apartments',
+        about: `Website I made for my mom :]`,
+        tools: [ 'Vue3', 'Vite', 'tailwindcss', 'Pinia'],
+        sourceCode: "https://github.com/azuzic/dragana-zuzic-apartments",
+        webPage: "https://www.apartments-premantura.com/home"
     },
 ];
 
