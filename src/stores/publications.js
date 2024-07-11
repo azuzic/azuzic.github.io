@@ -42,7 +42,7 @@ const publications = [
             evaluating different facets of the gaming experience in video games and showcase the potential of the proposed model and 
             measuring instrument as tools for game designers to enhance the overall quality of their products.`,
         link: "https://www.mdpi.com/2078-2489/14/6/350",
-        file: "src//assets/Publications/Evaluating a Conceptual Model for Measuring Gaming Experience A Case Study of Stranded Away Platformer Game.pdf"
+        file: "src/assets/Publications/Evaluating a Conceptual Model for Measuring Gaming Experience A Case Study of Stranded Away Platformer Game.pdf"
     },
     {
         title: 'Stranded Away: Implementation and User Experience Evaluation of an Indie Platformer Game Developed Using Unity Engine',

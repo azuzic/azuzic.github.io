@@ -30,6 +30,7 @@ app.use(Vue3Mq, {
 		xl2: 1536,
 		xl3: 1680,
 	},
+	global: true,
 });
 
 app.mount("#app");
